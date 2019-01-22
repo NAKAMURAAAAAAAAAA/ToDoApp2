@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B247A1221F770C500055E29 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B247A1121F770C500055E29 /* Utility.swift */; };
 		FA9AA75B21F1E89000648FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AA75A21F1E89000648FE2 /* AppDelegate.swift */; };
 		FA9AA75D21F1E89000648FE2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AA75C21F1E89000648FE2 /* FirstViewController.swift */; };
 		FA9AA75F21F1E89000648FE2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AA75E21F1E89000648FE2 /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B247A1121F770C500055E29 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		FA9AA75721F1E89000648FE2 /* ToDoApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9AA75A21F1E89000648FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9AA75C21F1E89000648FE2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				FA9AA76321F1E89300648FE2 /* Assets.xcassets */,
 				FA9AA76521F1E89300648FE2 /* LaunchScreen.storyboard */,
 				FA9AA76821F1E89300648FE2 /* Info.plist */,
+				0B247A1121F770C500055E29 /* Utility.swift */,
 			);
 			path = ToDoApp2;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B247A1221F770C500055E29 /* Utility.swift in Sources */,
 				FA9AA75F21F1E89000648FE2 /* SecondViewController.swift in Sources */,
 				FA9AA76F21F1E9F200648FE2 /* cellTableViewCell.swift in Sources */,
 				FA9AA77121F1ED9F00648FE2 /* ThirdViewController.swift in Sources */,
