@@ -11,9 +11,8 @@ import UIKit
 class cellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
-    
     @IBAction func donebutton(_ sender: Any) {
-        
+
     }
     override func awakeFromNib() {
         super.awakeFromNib()

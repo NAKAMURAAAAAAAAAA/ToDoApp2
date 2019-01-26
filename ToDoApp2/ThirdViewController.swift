@@ -10,12 +10,19 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        todos = loadTodos() ?? [TodoKobetsunonakami]()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        todos = loadTodos() ?? [TodoKobetsunonakami]()
+        tableView.reloadData()
+    }
 
     /*
     // MARK: - Navigation
@@ -27,4 +34,18 @@ class ThirdViewController: UIViewController {
     }
     */
 
+}
+
+extension ThirdViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todos.filter{ $0.done }.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DoneCell") as! donecellTableViewCell
+        cell.donelabel?.text = todos.filter{ $0.done }[indexPath.row].todotext
+        return cell
+    }
+    
+    
 }
